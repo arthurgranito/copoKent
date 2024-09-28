@@ -92,7 +92,7 @@ const updateCartModal = () => {
             </div>
         `;
 
-        total += (item.price * item.quantity) + (taxa - 10);
+        total += (item.price * item.quantity) + taxa;
 
         cartItemsContainer.appendChild(cartItemElement);
     })

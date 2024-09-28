@@ -198,14 +198,14 @@ checkoutBtn.addEventListener('click', () => {
         // Enviar pedido
         const cartItems = cart.map((item) => {
             return(
-                `${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price} | `
+                `${item.name} *Quantidade:* (${item.quantity}) *Preço:* R$${item.price} | `
             )
         }).join("")
 
         const message = encodeURIComponent(cartItems);
         const phone = '+5521971195445';
 
-        window.open(`https://wa.me/${phone}?text=${message}Taxa de entrega: R$${taxa} Total: R$${cartTotal.textContent} Endereço: ${novoEndereco.rua}, ${novoEndereco.numero} - ${novoEndereco.bairro}`, "_blank");
+        window.open(`https://wa.me/${phone}?text=${message}*Taxa de entrega:* R$${taxa} *Total:* R$${cartTotal.textContent} Endereço: ${novoEndereco.rua}, ${novoEndereco.numero} - ${novoEndereco.bairro}`, "_blank");
     }
 
 })

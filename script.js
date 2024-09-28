@@ -206,6 +206,13 @@ checkoutBtn.addEventListener('click', () => {
         const phone = '+5521971195445';
 
         window.open(`https://wa.me/${phone}?text=${message}*Taxa de entrega:* R$${taxa} *Total:* R$${cartTotal.textContent} *Endereço:* ${novoEndereco.rua}, ${novoEndereco.numero} - ${novoEndereco.bairro}`, "_blank");
+        cepInput.value = '';
+        numeroInput.value = '';
+        taxa = 0;
+        total = 0;
+        cart = [];
+        taxaTotal.innerHTML = 'R$0,00';
+        updateCartModal();
     }
 
 })

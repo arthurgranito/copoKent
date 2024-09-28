@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copokent Terê - Delivery de Bebidas</title>
+    <link rel="stylesheet" href="styles/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+
+<body class="max-w-[100vw]">
+    <!-- HEADER -->
+    <header class="w-full h-[420px] bg-home bg-zinc-900 bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/logo.jpg" alt="Logo da CopoKent"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Copokent Terê</h1>
+
+            <span class="text-white font-medium text-center flex flex-wrap">Rua Aurélio Batista Lopes 120, Teresópolis -
+                RJ</span>
+
+            <div class="bg-default px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium text-center">
+                    <p>Seg à Qui - 10:00 às 00:00</p>
+                    <p>Sex, Sab, Dom - 10:00 às 02:00</p>
+                </span>
+            </div>
+        </div>
+    </header>
+    <!-- FIM DO HEADER -->
+
+    <h1 class="text-3xl md:text-4xl font-bold text-center mt-9 mb-6">Conheça nosso menu</h1>
+
+    <!-- INICIO MENU -->
+    <div id="menu">
+
+        <main>
+            <h2 class="text-2xl md:text-3xl font-bold my-3 ml-5">Destilados</h2>
+
+            <div class="produtos grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16"">
+
+                <div class=" flex gap-2">
+                <img src="./assets/kovak.jpg" alt="Vodka Kovak 1L"
+                    class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-[400px]">
+                    <p class="font-bold">Vodka Kovak</p>
+                    <p class="text-sm">1L</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-14">
+                        <p class="font-bold text-lg">R$44,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Vodka Kovak 1L"
+                            data-price="44.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/smirnoff.jpg" alt="Vodka Smirnoff 998ML"
+                    class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-[400px]">
+                    <p class="font-bold">Vodka Smirnoff</p>
+                    <p class="text-sm">998ML</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-14">
+                        <p class="font-bold text-lg">R$59,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Vodka Smirnoff 998ML"
+                            data-price="59.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/ginrose.jpg" alt="Gin Flowers Drinks Rose 750ML"
+                    class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-[400px]">
+                    <p class="font-bold">Gin Flowers Drinks Rose</p>
+                    <p class="text-sm">750ML</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-14">
+                        <p class="font-bold text-lg">R$59,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Gin Flowers Drinks Rose 750ML" data-price="59.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/gintradicional.jpg" alt="Gin Flowers Drinks Rose 750ML"
+                    class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-[400px]">
+                    <p class="font-bold">Gin Flowers Drinks Tradicional</p>
+                    <p class="text-sm">750ML</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-14">
+                        <p class="font-bold text-lg">R$59,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Gin Flowers Drinks Tradicional 750ML" data-price="59.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/grappamiolo.png" alt="Grappa Miolo 500ML"
+                    class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-[400px]">
+                    <p class="font-bold">Grappa Miolo</p>
+                    <p class="text-sm">500ML</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-14">
+                        <p class="font-bold text-lg">R$120,00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Grappa Miolo 500ML"
+                            data-price="120.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/redlabel.jpg" alt="Whiskey Red Label 750ML"
+                    class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-[400px]">
+                    <p class="font-bold">Whiskey Red Label</p>
+                    <p class="text-sm">750ML</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-14">
+                        <p class="font-bold text-lg">R$90,00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Whiskey Red Label 75ML"
+                            data-price="90.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/ousadiaVodka.jpg" alt="Vodka Ousadia 970ML"
+                    class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-[400px]">
+                    <p class="font-bold">Ousadia Vodka</p>
+                    <p class="text-sm">970ML</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-14">
+                        <p class="font-bold text-lg">R$29,00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Ousadia Vodka 970ML"
+                            data-price="29.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/blackLabel.jpg" alt="Whiskey Black Label 750ML"
+                    class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-[400px]">
+                    <p class="font-bold">Whiskey Black Label</p>
+                    <p class="text-sm">750ML</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-14">
+                        <p class="font-bold text-lg">R$139,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Whiskey Black Label 750ML"
+                            data-price="139.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img src="./assets/vodka absolut.jpg" alt="Vodka Absolut 1L"
+                    class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                <div class="w-[400px]">
+                    <p class="font-bold">Vodka Absolut</p>
+                    <p class="text-sm">1L</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-14">
+                        <p class="font-bold text-lg">R$149,90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Vodka Absolut 1L"
+                            data-price="149.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-bold my-3 ml-5">Drinks</h2>
+
+    <div class="produtos grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+        <div class="flex gap-2">
+            <img src="./assets/ousadiaAzul.png" alt="Ousadia Blueberry 350ML"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Ousadia Blueberry</p>
+                <p class="text-sm">350ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$6,50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Ousadia Blueberry 350ML"
+                        data-price="6.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2 max-h-[128px]">
+            <img src="./assets/ousadiaLimao.jpg" alt="Ousadia Limão 350ML"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Ousadia Limão</p>
+                <p class="text-sm">350ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$6,50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Ousadia Limão 350ML"
+                        data-price="6.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2 max-h-[128px]">
+            <img src="./assets/skolBeats.jpg" alt="Skol Beats Tropical 269ML"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Skol Beats Tropical</p>
+                <p class="text-sm">269ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$7,60</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Skol Beats Tropical 269ML"
+                        data-price="7.60">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-bold my-3 ml-5">Vinhos</h2>
+
+    <div class="produtos grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-14">
+        <div class="flex gap-2">
+            <img src="./assets/vinhoBrancoSuave.jpeg" alt="Vinho Firsante Del Grano Branco Suave 750ML"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300 ">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Vinho Frisante Del Grano Branco Suave</p>
+                <p class="text-sm">750ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-8 md:mt-14">
+                    <p class="font-bold text-lg">R$35,90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Vinho Firsante Del Grano Branco Suave 750ML" data-price="35.90">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/pinkmoon.jpg" alt="Chopp de Vinho PinkMoon 600ML"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Chopp de Vinho PinkMoon</p>
+                <p class="text-sm">600ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$11,90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Chopp de Vinho PinkMoon 600ML"
+                        data-price="11.90">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/vinhoConchaYToro.png" alt="Vinho Concha Y Toro Reservado 750ML"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Vinho Concha Y Toro Reservado</p>
+                <p class="text-sm">750ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$36,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Vinho Concha Y Toro Reservado 750ML" data-price="36.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-bold my-3 ml-5">Cervejas</h2>
+
+    <div class="produtos grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-14">
+        <div class="flex gap-2">
+            <img src="./assets/packBudweiser.jpg" alt="Pack Budweiser Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Pack Budweiser Latão</p>
+                <p class="text-sm">12 Unidades 473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$84,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pack Budweiser Latão"
+                        data-price="84.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/packHeineken.jpg" alt="Pack Heineken Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Pack Heineken Latão</p>
+                <p class="text-sm">12 Unidades 473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$90,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pack Heineken Latão"
+                        data-price="90.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/packAmstel.jpg" alt="Pack Amstel Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Pack Amstel Latão</p>
+                <p class="text-sm">12 Unidades 473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$69,99</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pack Amstel Latão"
+                        data-price="69.99">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/packPetra.jpeg" alt="Pack Petra Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Pack Petra Latão</p>
+                <p class="text-sm">12 Unidades 473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$66,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pack Petra Latão"
+                        data-price="66.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/packItaipava.jpg" alt="Pack Itaipava Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Pack Itaipava Latão</p>
+                <p class="text-sm">12 Unidades 473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$66,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pack Itaipava Latão"
+                        data-price="66.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/packStella.png" alt="Pack Stella Artois Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Pack Stella Artois Latão</p>
+                <p class="text-sm">12 Unidades 473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$99,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Pack Stella Artois Latão"
+                        data-price="99.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/amstelLatao.jpg" alt="Amstel Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Amstel Latão</p>
+                <p class="text-sm">473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$5,99</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Amstel Latão" data-price="5.99">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/heinekenLatao.jpg" alt="Heineken Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Heineken Latão</p>
+                <p class="text-sm">473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$7,90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Heineken Latão"
+                        data-price="7.90">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/antarcticaLatao.jpg" alt="Antarctica Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Antarctica Latão</p>
+                <p class="text-sm">473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$6,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Antarctica Latão"
+                        data-price="6.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/imperioLatao.png" alt="Império Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Império Latão</p>
+                <p class="text-sm">473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$6,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Império Latão"
+                        data-price="6.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/budweiserLatão.jpg" alt="Budweiser Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Budweiser Latão</p>
+                <p class="text-sm">473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$6,99</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Budweiser Latão"
+                        data-price="6.99">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/stellaLatao.jpg" alt="Stella Artois Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Stella Artois Latão</p>
+                <p class="text-sm">473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$9,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Stella Artois Latão"
+                        data-price="9.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/antarcticaSuperLatao.png" alt="Antarctica Super Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Antarctica Super Latão</p>
+                <p class="text-sm">550ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$7,50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Antarctica Super Latão"
+                        data-price="7.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/brahmaLatao.jpeg" alt="Brahma Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Brahma Latão</p>
+                <p class="text-sm">473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$6,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Brahma Latão" data-price="6.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/brahmaDuploLatao.jpg" alt="Brahma Duplo Malte Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Brahma Duplo Malte Latão</p>
+                <p class="text-sm">473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$6,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Brahma Duplo Malte Latão"
+                        data-price="6.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/coronaLatao.jpg" alt="Corona Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Corona Latão</p>
+                <p class="text-sm">473ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$9,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Corona Latão" data-price="9.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/itaipavaSuperLatao.png" alt="Itaipava Super Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Itaipava Super Latão</p>
+                <p class="text-sm">550ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$6,50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Itaipava Super Latão"
+                        data-price="6.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/petraSuperLatao.jpeg" alt="Petra Super Latão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Petra Super Latão</p>
+                <p class="text-sm">550ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$7,50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Petra Super Latão"
+                        data-price="7.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/cidadeImperialLongNeck.png" alt="Cidade Imperial Long Neck"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Cidade Imperial Long Neck</p>
+                <p class="text-sm">330ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$6,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Cidade Imperial Long Neck"
+                        data-price="6.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/amstelLongNeck.jpg" alt="Amstel Long Neck"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Amstel Long Neck</p>
+                <p class="text-sm">355ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$6,50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Amstel Long Neck"
+                        data-price="6.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-bold my-3 ml-5">Refrigerantes</h2>
+
+    <div class="produtos grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-14">
+        <div class="flex gap-2">
+            <img src="./assets/cocaCola.jpeg" alt="Coca-Cola"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Coca-Cola</p>
+                <p class="text-sm">2L</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$12,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca-Cola" data-price="12.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/h2oLimao.jpg" alt="H2O Limão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">H2O Limão</p>
+                <p class="text-sm">500ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$4,99</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="H2O Limão" data-price="4.99">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/cocaLata.jpeg" alt="Coca-Cola Lata"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Coca-Cola Lata</p>
+                <p class="text-sm">350ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$6,49</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca-Cola Lata"
+                        data-price="6.49">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/cocaZeroLata.png" alt="Coca-Cola Zero Lata"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Coca-Cola Zero Lata</p>
+                <p class="text-sm">350ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$6,49</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca-Cola Zero Lata"
+                        data-price="6.49">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-bold my-3 ml-5">Sucos</h2>
+
+    <div class="produtos grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-14">
+        <div class="flex gap-2">
+            <img src="./assets/guaravita.jpg" alt="Guaravita"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Guaravita</p>
+                <p class="text-sm">290ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$2,50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guaravita" data-price="2.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-bold my-3 ml-5">Água e Gelo</h2>
+
+    <div class="produtos grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-14">
+        <div class="flex gap-2">
+            <img src="./assets/agua.jpeg" alt="Água Mineral com Gás"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Água Mineral com Gás</p>
+                <p class="text-sm">500ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$4,50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Água Mineral com Gás"
+                        data-price="4.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/agua.jpeg" alt="Água Mineral sem Gás"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Água Mineral sem Gás</p>
+                <p class="text-sm">500ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$3,50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Água Mineral sem Gás"
+                        data-price="3.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/geloMorango.png" alt="Gelo Saborizado Morango"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Gelo Saborizado Morango</p>
+                <p class="text-sm">200ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$3,99</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Gelo Saborizado Morango"
+                        data-price="3.99">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/geloAbacaxi.jpeg" alt="Gelo Saborizado Abacaxi"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Gelo Saborizado Abacaxi</p>
+                <p class="text-sm">200ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$3,99</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Gelo Saborizado Abacaxi"
+                        data-price="3.99">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/geloMacaVerde.png" alt="Gelo Saborizado Maçã Verde"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Gelo Saborizado Maçã Verde</p>
+                <p class="text-sm">200ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$3,99</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Gelo Saborizado Maçã Verde"
+                        data-price="3.99">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/geloLimao.png" alt="Gelo Saborizado Limão"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Gelo Saborizado Limão</p>
+                <p class="text-sm">200ML</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$3,99</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Gelo Saborizado Limão"
+                        data-price="3.99">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-bold my-3 ml-5">Energético</h2>
+
+    <div class="produtos grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-14">
+        <div class="flex gap-2">
+            <img src="./assets/energyPlus.jpeg" alt="Energy Plus"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Energy Plus</p>
+                <p class="text-sm">2L</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$9,90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Energy Plus" data-price="9.90">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-bold my-3 ml-5">Churrasco</h2>
+
+    <div class="produtos grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-14">
+        <div class="flex gap-2">
+            <img src="./assets/carvao.jpg" alt="Carvão Lisboa"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Carvão Lisboa</p>
+                <p class="text-sm">2,5Kg</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$14,99</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Carvão Lisboa"
+                        data-price="14.99">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-bold my-3 ml-5">Snacks</h2>
+
+    <div class="produtos grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-14">
+        <div class="flex gap-2">
+            <img src="./assets/trident.png" alt="Trident X Senses Intense"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Trident X Senses Intense</p>
+                <p class="text-sm">Sem Açúcar - 8g</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$3,50</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Trident X Senses Intense"
+                        data-price="3.50">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/hallsCereja.jpg" alt="Halls Cereja"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Halls Cereja</p>
+                <p class="text-sm">28g</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$3,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Halls Cereja" data-price="3.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/hallsPreta.jpeg" alt="Halls Cereja"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Halls Extra Forte</p>
+                <p class="text-sm">28g</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$3,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Halls Extra Forte"
+                        data-price="3.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img src="./assets/ovinhos.jpg" alt="Ovinhos de Amendoim Elma Chips"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Ovinhos de Amendoim</p>
+                <p class="text-sm">145g</p>
+
+                <div class="flex items-center gap-2 justify-between mt-14">
+                    <p class="font-bold text-lg">R$9,00</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Ovinhos de Amendoim Elma Chips"
+                        data-price="9.00">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-2xl md:text-3xl font-bold my-3 ml-5">Combos</h2>
+
+    <div class="produtos grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+        <div class="flex gap-2">
+            <img src="./assets/comboDrink.png" alt="Combo Drink"
+                class="w-32 h-32 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+            <div class="w-[400px]">
+                <p class="font-bold">Combo Drink</p>
+                <p class="text-sm">Vodka Ousadia + Energy Plus + 2 Gelos Saborizados</p>
+
+                <div class="flex items-center gap-2 justify-between mt-10 md:mt-14">
+                    <p class="font-bold text-lg">R$44,90</p>
+                    <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Combo Drink" data-price="44.90">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    </div>
+    <!-- FIM MENU -->
+
+    <!-- MODAL CART -->
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[70%] max-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col">
+
+            </div>
+
+            <p class="font-bold">Total: <span id="cart-total">R$0,00</span></p>
+            <p class="font-bold">Taxa de Entrega: <span id="taxa-total">R$0,00</span></p>
+
+            <div class="inputs">
+                <div>
+                    <p class="font-bold mt-4">CEP:</p>
+                    <input type="text" placeholder="Digite seu CEP" id="cep"
+                        class="border-2 p-1 rounded my-1 outline-none md:w-[240px] inputEsquerda">
+                    <p class="text-red-500 hidden" id="cep-warn">Digite seu CEP</p>
+                </div>
+
+                <div>
+                    <p class="font-bold mt-4">Número:</p>
+                    <input type="text" placeholder="Digite seu número" class="border-2 p-1 rounded my-1 outline-none w-full"
+                        id="numero">
+                    <p class="text-red-500 hidden" id="numero-warn">Digite o seu número</p>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between mt-4 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+    <!-- FIM MODAL CART -->
+
+    <!-- BUTTON CART FOOTER -->
+    <footer class="w-full bg-default py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <!-- FIM BUTTON CART FOOTER -->
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>

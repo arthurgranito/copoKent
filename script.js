@@ -70,7 +70,7 @@ const addToCart = (name, price) => {
 
     Toastify({
         text: "Adicionado!",
-        duration: 3000,
+        duration: 2000,
         close: true,
         gravity: "top", // `top` or `bottom`
         position: "right", // `left`, `center` or `right`

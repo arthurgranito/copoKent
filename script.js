@@ -49,7 +49,6 @@ menu.addEventListener('click', (event) => {
     if (parentButton) {
         const name = parentButton.getAttribute('data-name');
         const price = parseFloat(parentButton.getAttribute('data-price')).toFixed(2);
-
         // Adicionar no carrinho
         addToCart(name, price);
     }
@@ -69,7 +68,22 @@ const addToCart = (name, price) => {
         })
     }
 
+    Toastify({
+        text: "Item adicionado!",
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+            background: "rgb(6, 179, 6)",
+        },
+    }).showToast();
     updateCartModal();
+}
+
+const atualizarSpan = (quantidade) => {
+    spanFinal.innerText = quantidade;
 }
 
 // Atualiza o carrinho
@@ -88,7 +102,11 @@ const updateCartModal = () => {
                     <p>Qtd: ${item.quantity}</p>
                     <p class="font-medium mt-2">R$${item.price}</p>
                 </div>
-                <button class="remove-from-cart-btn" data-name="${item.name}">Remover</button>
+
+                <button class="remove-from-cart-btn bg-red-500 text-white font-medium p-1 rounded" data-name="${item.name}">
+                    Remover
+                </button>
+                
             </div>
         `;
 

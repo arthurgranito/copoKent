@@ -69,7 +69,7 @@ const addToCart = (name, price) => {
     }
 
     Toastify({
-        text: "Item adicionado!",
+        text: "Adicionado!",
         duration: 3000,
         close: true,
         gravity: "top", // `top` or `bottom`
